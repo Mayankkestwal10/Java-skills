@@ -11,9 +11,9 @@ class Employee {
         this.salary = s;
     }
 
-    public static void getEmployee(String nm, ArrayList <Employee>emp) {
+    public static void getEmployee(String nm, ArrayList<Employee> emp) {
         for (Employee i : emp) {
-            if (i.name==nm){
+            if (i.name == nm) {
                 System.out.println("Employee name : " + nm + "\t" + i.emp_id + "\t" + i.salary);
             }
         }
@@ -30,6 +30,6 @@ class DemoArrayList {
         Employee e3 = new Employee("Sagar", 17, 42.5);
         emp.add(e3);
 
-        Employee.getEmployee("Saurav",emp);
+        Employee.getEmployee("Saurav", emp);
     }
 }
